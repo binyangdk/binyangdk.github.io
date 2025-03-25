@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>BinYang's Homepage</title><meta name="description" content="A Resume Page Powered By Hexo"><meta name="keywords"><link rel="icon" href="images/bin.jpg"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li><a href="#Home">Home</a></li><li><a href="#Publications">Publications</a></li><li><a href="#Students">Students</a></li><li><a href="#Scientific Service">Scientific Service</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none;"> </a></li></div></div></div><div class="sidebar animated fadeInDown"><div class="side-content"><div class="logo-title"><div class="title"><img src="/images/pic1.png" style="width:128px;"><h3 title=""><a href="/">BinYang</a></h3></div></div><ul class="social-links"><li><i class="fa fa-briefcase"> </i>Chair Professor, Ph.D. Supervisor</li><li><a target="_blank" rel="noopener" href="https://decisionintelligence.github.io/" title="Decision Intelligence Lab"><i class="fa fa-flask"></i>Decision Intelligence Lab</a></li><li><i class="fa fa-university"> </i>DASE, East China Normal University</li><li><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=qjBQhoUAAAAJ" target="_blank" title="谷歌学术"><i class="fa fa-graduation-cap"></i>Google Scholar</a></li><li><a href="byang[at]dase.ecnu.edu.cn"><i class="fa fa-envelope"></i>byang[at]dase.ecnu.edu.cn</a></li></ul></div><div class="footer"><div class="p"> <span>© 2025 </span><i class="fa fa-star"></i><span> </span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/Cytrogen/hexo-theme-Anatole-Core-Resume" target="_blank">Anatole-Core-Resume</a></div></div></div><div class="content" style="display:none;"><script>//- 如果是移动端，则设置content的margin-top为sidebar的高度
+//- If it is a mobile terminal, set the margin-top of content to the height of sidebar
+window.onload = function() {
+	if (window.matchMedia("(max-width: 960px)").matches) {
+		var sidebar = document.querySelector('.sidebar');
+		var sidebarHeight = sidebar.offsetHeight;
+		document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+	}
+	//- 页面加载完成后，显示content
+	//- Display content after page loading is complete
+	document.querySelector(`.content`).style.display = "block";
+
+	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
+	//- Listen for window size changes, assuming that the user modifies the window size on the desktop terminal, the margin-top of content will get reset
+	window.addEventListener('resize', function() {
+		if (window.matchMedia("(max-width: 960px)").matches) {
+			var sidebar = document.querySelector('.sidebar');
+			var sidebarHeight = sidebar.offsetHeight;
+			document.querySelector('.content').style.marginTop = `${sidebarHeight}px`;
+		} else {
+			//- 如果是桌面端，则设置content的margin-top为60px
+			//- If it is a desktop terminal, set the margin-top of content to 60px
+			document.querySelector('.content').style.marginTop = "60px";
+		}
+	});
+}
+</script><div class="post animated fadeInDown" id="Home"><div class="post-title"><h1><a>Home</a></h1></div><div class="post-content"><font face="Times" color='black'>
+
+<p>I am a professor in School of Data Science and Engineering at East China Normal University. I am an IEEE senior member.</p>
+<p>I obtained my Ph.D. degree from Fudan University in 2010. During August 2010 to August 2011, I was at Max-Planck-Institut für Informatik, working in the Databases and Information Systems department headed by Gerhard Weikum. From September 2011 to July 2014, I was at Aarhus University, working in the Data-Intensive Systems group headed by Christian S. Jensen. From 2014 to 2022, I was at Aalborg University. I joined East China Normal University in August 2022.</p>
+<h2 id="Research-Interests"><a href="#Research-Interests" class="headerlink" title="Research Interests"></a>Research Interests</h2><p>Data management and machine leanring, in particular, on spatio-temporal data, time series, graphs, and uncertain data.</p>
+<ul>
+<li>The slides for my MDM 2019 Early Career Distinguished Lecture on Learning to Route are avaiable <a target="_blank" rel="noopener" href="https://homes.cs.aau.dk/~byang/papers/2019-mdm-L2R.pdf">here</a>.</li>
+<li>An overview of my recent research on enabling eco-routing using big transportation data is available <a target="_blank" rel="noopener" href="https://homes.cs.aau.dk/~byang/reduction.htm">here</a>.</li>
+<li>A vision on extracting 3T (thorough, timely, and trustworthy) traffic knowledge from big transportation data to achieve total traffic awareness is available <a target="_blank" rel="noopener" href="https://homes.cs.aau.dk/~byang/papers/3T_knowledge.pdf">here</a>.</li>
+</ul>
+<h2 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h2><ul>
+<li>Time Series Analytics and Spatio-temporal Data Management, funded by Huawei, 2020 - 2022.</li>
+<li>Light-AI for Cognitive Power Electronics, funded by Villum Synergy Programme, 2020 - 2022.</li>
+<li>Advance: A Data-Intensive Paradigm for Dynamic, Uncertain Networks, funded by Independent Research Fund Denmark, 2019 - 2023.</li>
+<li>Algorithmic Foundations for Data-Intensive Routing, funded by The Danish Agency for Science and Higher Education, 2019 - 2021.</li>
+<li>Astra: AnalyticS of Time seRies in spAtial networks, funded by Independent Research Fund Denmark, 2018 - 2021.</li>
+<li>Distinguished Scholar, funded by The Technical Faculty of IT and Design, Aalborg University, 2018 - 2021.</li>
+<li>Research Collaborations with Industries in North Jutland, funded by Aalborg Kommune, 2018.</li>
+<li>aSTEP: aau’s Spatio-TEmporal data analytics Platform, funded by Aalborg University, since 2016.</li>
+</ul>
+</font>
+
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Publications"><div class="post-title"><h1><a>Publications</a></h1></div><div class="post-content"><font face="Times" color='black'>
+
+<ul>
+<li><a target="_blank" rel="noopener" href="https://dblp.uni-trier.de/pers/hd/y/Yang_0002:Bin">DBLP</a></li>
+<li><a target="_blank" rel="noopener" href="http://scholar.google.com/citations?user=qjBQhoUAAAAJ&hl=en">Google Scoolar</a></li>
+<li><a target="_blank" rel="noopener" href="http://orcid.org/0000-0002-1658-1079">ORCID</a></li>
+</ul>
+<h2 id="Recent-and-Selected-Publications"><a href="#Recent-and-Selected-Publications" class="headerlink" title="Recent and Selected Publications"></a>Recent and Selected Publications</h2><ul>
+<li>David Campos, Bin Yang, Tung Kieu, Miao Zhang, Chenjuan Guo, Christian S. Jensen. QCore: Data-Efficient, On-Device Continual Calibration for Quantized Models. PVLDB 2024.</li>
+<li>Chenjuan Guo, Ronghui Xu, Bin Yang, Ye Yuan, Tung Kieu, Yan Zhao, Christian S. Jensen. Efficient Stochastic Routing in Path-Centric Uncertain Road Networks. PVLDB 2024.</li>
+<li>Xiangfei Qiu, Jilin Hu, Lekui Zhou, Xingjian Wu, Junyang Du, Buang Zhang, Chenjuan Guo, Aoying Zhou, Christian S. Jensen, Zhenli Sheng, Bin Yang. TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods. PVLDB 2024.</li>
+<li>Peng Chen, Yingying Zhang, Yunyao Cheng, Yang Shu, Yihang Wang, Qingsong Wen, Bin Yang, and Chenjuan Guo. Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting. ICLR 2024.</li>
+<li>Hao Miao, Yan Zhao, Chenjuan Guo, Bin Yang, Kai Zheng, Feiteng Huang, Jiandong Xie, and Christian S. Jensen. A Unified Replay-based Continuous Learning Framework for Spatio-Temporal Prediction on Streaming Data. ICDE 2024.</li>
+<li>Yunyao Cheng, Peng Chen, Chenjuan Guo, Kai Zhao, Qingsong Wen, Bin Yang, and Christian S. Jensen. Weakly Guided Adaptation for Robust Time Series Forecasting. PVLDB 2024.</li>
+<li>Kai Zhao, Chenjuan Guo, Yunyao Cheng, Peng Han, Miao Zhang, and Bin Yang. Multiple Time Series Forecasting with Dynamic Graph Modeling. PVLDB 2024.</li>
+<li>Yan Lin, Huaiyu Wan, Jilin Hu, Shengnan Guo, Bin Yang, Youfang Lin, and Christain S. Jensen. Origin-Destination Travel Time Oracle for Map-based Services. SIGMOD 2024.</li>
+<li>Sean Bin Yang, Jilin Hu, Chenjuan Guo, Bin Yang, and Christain S. Jensen. LightPath: Lightweight and Scalable Path Representation Learning. KDD 2023.</li>
+<li>Zhicheng Pan, Yihang Wang, Yingying Zhang, Sean Bin Yang, Yunyao Cheng, Peng Chen, Chenjuan Guo, Qingsong Wen, Xiduo Tian, Yunliang Dou, Zhiqiang Zhou, Chengcheng Yang, Aoying Zhou, and Bin Yang. MagicScaler: Uncertainty-aware, Predictive Autoscaling. PVLDB 2023.</li>
+<li>David Campos, Miao Zhang, Bin Yang, Tung Kieu, Chenjuan Guo, Christian S. Jensen: LightTS: Lightweight Time Series Classification with Adaptive Ensemble Distillation. SIGMOD 2023.</li>
+<li>Xinle Wu, Dalin Zhang, Miao Zhang, Chenjuan Guo, Bin Yang, Christian S. Jensen. AutoCTS+: Joint Neural Architecture and Hyperparameter Search for Correlated Time Series Forecasting. SIGMOD 2023.</li>
+<li>Haomin Yu, Jilin Hu, Xinyuan Zhou, Chenjuan Guo, Bin Yang, and Qingyong Li. CGF: A Category Guidance Based PM2.5 Sequence Forecasting Training Framework. IEEE TKDE 2023.</li>
+<li>Ming Jin, Yu Zheng, Yuan-Fang Li, Siheng Chen, Bin Yang, and Shirui Pan. Multivariate Time Series Forecasting with Dynamic Graph Neural ODEs. IEEE TKDE 2023.</li>
+<li>Miao Zhang, Wei Huang, and Bin Yang. Interpreting Operation Selection in Differentiable Architecture Search: A Perspective from Influence-Directed Explanations. NeurIPS 2022.</li>
+<li>Miao Zhang, Li Wang, David Campos, Wei Huang, Chenjuan Guo, and Bin Yang. Weighted Mutual Learning with Diversity-Driven Model Compression. NeurIPS 2022.</li>
+<li>Shufang Xie, Peng Han, Yingce Xia, Lijun Wu, Tao Qin, Chenjuan Guo, Bin Yang, and Rui Yan. RetroGraph: Retrosynthetic Planning with Graph Search. KDD 2022, 2120-2129.</li>
+<li>Razvan-Gabriel Cirstea, Chenjuan Guo, Bin Yang, Tung Kieu, Xuanyi Dong, and Shirui Pan. Triformer: Triangular, Variable-Specific Attentions for Long Sequence Multivariate Time Series Forecasting. IJCAI 2022, 1994-2001.</li>
+<li>Razvan-Gabriel Cirstea, Bin Yang, Chenjuan Guo, Tung Kieu, and Shirui Pan. Towards Spatio-Temporal Aware Traffic Time Series Forecasting. ICDE 2022, 2900-2913.</li>
+<li>Tung Kieu, Bin Yang, Chenjuan Guo, Christian S. Jensen, Yan Zhao, Feiteng Huang, and Kai Zheng. Robust and Explainable Autoencoders for Time Series Outlier Detection. ICDE 2022, 3038-3050.</li>
+<li>Sean Bin Yang, Chenjuan Guo, Jilin Hu, Bin Yang, Jian Tang, and Christian S. Jensen. Weakly-supervised Temporal Path Representation Learning with Contrastive Curriculum Learning. ICDE 2022, 2873-2885.</li>
+<li>Xuanhao Chen, Yan Zhao, Kai Zheng, Bin Yang, and Christian S. Jensen. Influence-aware Task Assignment in Spatial Crowdsourcing. ICDE 2022, 2141-2153.</li>
+<li>Miao Zhang, Shirui Pan, Xiaojun Chang, Steven Su, Jilin Hu, Reza Haffari, and Bin Yang. BaLeNAS: Differentiable Architecture Search via Bayesian Learning Rule. CVPR 2022, 11861-11870.</li>
+<li>Yan Zhao, Xuanhao Chen, Liwei Deng, Tung Kieu, Chenjuan Guo, Bin Yang, Kai Zheng and Christian S. Jensen. Outlier Detection for Streaming Task Assignment in Crowdsourcing. WWW 2022, 1933-1943.</li>
+<li>Frederik Mathiesen, Bin Yang, and Jilin Hu. Hyperverlet: A Symplectic Hypersolver for Hamiltonian Systems. AAAI 2022, 4575-4582.</li>
+<li>Tung Kieu, Bin Yang, Chenjuan Guo, Razvan-Gabriel Cirstea, Yan Zhao, Yale Song, and Christian S. Jensen. Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders. ICDE 2022, 1342-1354.</li>
+<li>Xinle Wu, Dalin Zhang, Chenjuan Guo, Chaoyang He, Bin Yang, and Christian S. Jensen. AutoCTS: Automated Correlated Time Series Forecasting. PVLDB 15(4), 971-983 (2021).</li>
+<li>David Campos, Tung Kieu, Chenjuan Guo, Feiteng Huang, Kai Zheng, Bin Yang, and Christian S. Jensen. Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles. PVLDB 15(3), 611-623 (2021).</li>
+<li>Sean Bin Yang, Chenjuan Guo, Jilin Hu, Jian Tang, and Bin Yang. Unsupervised Path Representation Learning with Curriculum Negative Sampling. IJCAI 2021, 3286-3292.</li>
+<li>Yan Zhao, Kai Zheng, Jiannan Guo, Bin Yang, Torben Bach Pedersen, and Christian S. Jensen. Fairness-aware Task Assignment in Spatial Crowdsourcing: Game-Theoretic Approaches. ICDE 2021, 265-276.</li>
+<li>Razvan-Gabriel Cirstea, Tung Kieu, Chenjuan Guo, Bin Yang, and Sinno Jialin Pan. EnhanceNet: Plugin Neural Networks for Enhancing Correlated Time Series Forecasting. ICDE 2021, 1739-1750.</li>
+<li>Sean Bin Yang, Chenjuan Guo, and Bin Yang. Context-Aware Path Ranking in Road Networks. TKDE 2020.</li>
+<li>Simon Aagaard Pedersen, Bin Yang, and Christian S. Jensen. Anytime Stochastic Routing with Hybrid Learning. PVLDB 13(9): 1555-1567 (2020).</li>
+<li>Chenjuan Guo, Bin Yang, Jilin Hu, Christian S. Jensen, and Lu Chen. Context-Aware, Preference-Based Vehicle Routing. The VLDB Journal 29(5): 1149-1170 (2020).</li>
+<li>Jilin Hu, Bin Yang, Chenjuan Guo, Christian S. Jensen, and Hui Xiong. Stochastic Origin-Destination Matrix Forecasting Using Dual-Stage Graph Convolutional, Recurrent Neural Networks. ICDE 2020, 1417-1428.</li>
+<li>Simon Aagaard Pedersen, Bin Yang, and Christian S. Jensen. Fast Stochastic Routing under Time-Varying Uncertainty. The VLDB Journal 29(4): 819-839 (2020).</li>
+<li>Tung Kieu, Bin Yang, Chenjuan Guo, and Christian S. Jensen. Outlier Detection for Time Series with Recurrent Autoencoder Ensembles. IJCAI 2019, 2725-2732. code</li>
+<li>Jilin Hu, Chenjuan Guo, Bin Yang, and Christian S. Jensen. Stochastic Weight Completion for Road Networks using Graph Convolutional Networks. ICDE 2019, 1274-1285. code</li>
+<li>Fan Xia, Bin Yang, Chengcheng Yu, Weining Qian, and Aoying Zhou. Towards Longitudinal Analytics on Social Media Data. ICDE 2019, 350-361.</li>
+<li>Chenjuan Guo, Bin Yang, Jilin Hu, and Christian S. Jensen. Learning to Route with Sparse Trajectory Sets. ICDE 2018, 1073-1084.</li>
+<li>Huiping Liu, Cheqing Jin, Bin Yang, and Aoying Zhou. Finding Top-k Optimal Sequenced Routes. ICDE 2018, 569-580.</li>
+<li>Jilin Hu, Bin Yang, Chenjuan Guo, and Christian S. Jensen. Risk-Aware Path Selection with Time-Varying, Uncertain Travel Costs—A Time Series Approach. The VLDB Journal 27(2): 179-200 (2018).</li>
+<li>Bin Yang, Jian Dai, Chenjuan Guo, Christian S. Jensen, and Jilin Hu. PACE: A PAth-CEntric Paradigm For Stochastic Path Finding. The VLDB Journal 27(2): 153-178 (2018).</li>
+<li>Huiping Liu, Cheqing Jin, Bin Yang, and Aoying Zhou. Finding Top-k Shortest Paths with Diversity. TKDE 30(3), 488-502 (2018).</li>
+<li>Jian Dai, Bin Yang, Chenjuan Guo, Christian S. Jensen, and Jilin Hu. Path Cost Distribution Estimation Using Trajectory Data. PVLDB 10(3): 85-96 (2016).</li>
+<li>Bin Yang, Chenjuan Guo, Yu Ma, and Christian S. Jensen. Toward Personalized, Context-Aware Routing. The VLDB Journal 24(2):297-318 (2015).</li>
+<li>Jian Dai, Bin Yang, Chenjuan Guo, and Zhiming Ding. Personalized Route Recommendation using Big Trajectory Data. ICDE 2015, 543-554, Seoul, Korea, April 2015.</li>
+<li>Jinling Jiang, Hua Lu, Bin Yang, and Bin Cui. Finding Top-k Local Users in Geo-Tagged Social Media Data. ICDE 2015, 267-278, Seoul, Korea, April 2015.</li>
+<li>Bin Yang, Chenjuan Guo, Christian S. Jensen, Manohar Kaul, and Shuo Shang. Stochastic Skyline Route Planning Under Time-Varying Uncertainty. ICDE 2014, 136-147, Chicago, Illinois, USA, March 2014. (Acceptance Rate: 89&#x2F;446&#x3D;20.0%)</li>
+<li>Manohar Kaul, Raymond Chi-Wing Wong, Bin Yang, and Christian S. Jensen. Finding Shortest Paths on Terrains by Killing Two Birds with One Stone. PVLDB 7(1):73-84. VLDB 2014, Hangzhou, China, Septmber, 2014.</li>
+<li>Bin Yang, Manohar Kaul, and Christian S. Jensen. Using Incomplete Information for Complete Weight Annotation of Road Networks. TKDE 26(5):1267-1279.</li>
+<li>Bin Yang, Chenjuan Guo, and Christian S. Jensen. Travel Cost Inference from Sparse, Spatio-Temporally Correlated Time Series Using Markov Models. PVLDB 6(9):769-780. VLDB 2013, Riva del Garda, Trento, Italy, August 2013. (Acceptance Rate: 23%, out of 559 submissions)</li>
+</ul>
+</font></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Students"><div class="post-title"><h1><a>Students</a></h1></div><div class="post-content"><h2 id="Ph-D-Students"><a href="#Ph-D-Students" class="headerlink" title="Ph.D. Students"></a>Ph.D. Students</h2><font face="Times" color='black'>
+
+<ul>
+<li>David Gonzalo Chaves Campos, 8.2021 to Present, Co-supervision with Tung Kieu.</li>
+<li>Xinle Wu, 10.2020 to Present, Automated and Efficient Learning, Co-supervision with Dalin Zhang.</li>
+<li>Sean Bin Yang, 5.2019 to Present, Machine Learning for Spatio-temporal Data, Co-supervision with Jilin Hu.</li>
+<li>Razvan-Gabriel Cirstea, 10.2018 to 3.2022, Model Parameter Generation for Correlated Time Series Forecasting, Co-supervision with Chenjuan Guo.</li>
+<li>Simon Aagaard Pedersen, 9.2017 to 12.2021, Towards Efficient Stochastic Routing in Road Networks, Co-supervision with Christian S. Jensen.</li>
+<li>Tung Kieu, 2.2017 to 3.2021, Deep Autoencoders for Time Series Outlier Detection and Trajectory Clustering, Co-supervision with Christian S. Jensen.</li>
+<li>Jilin Hu, 10.2015 to 12.2018, Managing and Analyzing Big Traffic Data–An Uncertain Time Series Approach, Co-supervision with Christian S. Jensen.</li>
+</ul>
+<h2 id="Master-Students"><a href="#Master-Students" class="headerlink" title="Master Students"></a>Master Students</h2><h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><ul>
+<li>Jákup Odssonur Svøðstein. Unveiling the predictive power of the 3D Roto-Translation Equivariant Graph Neural Network MPNet.</li>
+<li>Ahmet Pekbas, Christoffer Najbjerg Knudsen, Rasmus Barrett. 3D Bounding Box Prediction for Embedded Systems.</li>
+<li>Anders Madsen, Frederik Baymler Mathiesen. HyperVerlet: a Deep Learning Method for Numerically Solving Initial Value Problems of Hamiltonian Systems.</li>
+<li>Emil Johan Taudal Andersen, Jonas Rechnitzer Eriksen, Peter Fogh Bugtrup. CleanNav: Dirt Detection and Depth Prediction with Multi-Task Learning and Multi-View Learning.</li>
+<li>David Gonzalo Chaves Campos. Unsupervised Time Series Outlier Detection.</li>
+<li>Mik Christensen. Time Series Outlier Detection.</li>
+</ul>
+<h3 id="2020"><a href="#2020" class="headerlink" title="2020"></a>2020</h3><ul>
+<li>Thomas Buhl Andersen, Rógvi Eliasen, Mikkel Jarlund. Force Myography Hand Gesture Recognition Using Transfer Learning.</li>
+<li>Christopher Hansen Nielsen, Simon Makne Randers. Estimating Travel Cost Distributions of Paths in Road Networks using Dual-Input LSTMs.</li>
+<li>Ivan Iliev, Predicting Stochastic Demand using a Multi-Task Recurrent Mixture Density Network.</li>
+<li>Jakob Meldgaard Kjær, Lasse Kristensen, Mads Alberg Christensen. Partitioned Graph Convolution using Adversarial and Regression Networks for Road Travel Speed Prediction.</li>
+<li>Laurids Vinther Kirkeby, Mikkel Elkjær Holm. Utilizing Mixture Density Networks for Travel TimeProbability Distribution Predictions.</li>
+</ul>
+<h3 id="2018"><a href="#2018" class="headerlink" title="2018"></a>2018</h3><ul>
+<li>Razvan-Gabriel Cirstea, Darius-Valer Micu, Gabriel-Marcel Muresan. Correlated Time Series Forecasting using Modular Multi-Task Deep Neural Networks.</li>
+<li>Georgi Andonov. Efficient Stochastic Routing in PAth-CEntric Uncertain Road Networks.</li>
+</ul>
+<h3 id="2017"><a href="#2017" class="headerlink" title="2017"></a>2017</h3><ul>
+<li>Lynge Kærlund Poulsgaard, Philip Pannerup Sørensen, Henrik Ullerichs. Clustering Based On Driving Styles Using Hot Paths. Cosupervised with Kristian Torp.</li>
+<li>Joachim Højbak Klokkervoll, Mike Pedersen, Samuel Nygaard Pedersen. Personalized Navigation: Context-Based Preference Mining Using TensorFlow. Cosupervised with Kristian Torp.</li>
+</ul>
+<h2 id="Vistors"><a href="#Vistors" class="headerlink" title="Vistors"></a>Vistors</h2><ul>
+<li>2021~2022, Haomin Yu, Beijing Jiaotong University.</li>
+<li>2021~2022, Xuanhao Chen, University of Electronic Science and Technology of China.</li>
+<li>2020~2021, Tao Wang, Huaiyin Normal University.</li>
+<li>2015~2016, Qiang Lu, China University of Petroleum-Beijing.</li>
+<li>2014~2015, Jian Dai, Chinese Academy of Science University.</li>
+</ul>
+</font></div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="post animated fadeInDown" id="Scientific Service"><div class="post-title"><h1><a>Scientific Service</a></h1></div><div class="post-content"><font face="Times" color='black'>
+
+<h2 id="Conference-Organizer"><a href="#Conference-Organizer" class="headerlink" title="Conference Organizer"></a>Conference Organizer</h2><ul>
+<li>Local Arrangements Co-Chair, 47th International Conference on Very Large Data Bases (VLDB 2021)</li>
+<li>Workshops Co-chair, 28th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL 2020)</li>
+<li>Local Executive Chair, EDBT&#x2F;ICDT 2020 Joint Conference (EDBT&#x2F;ICDT 2020)</li>
+<li>Publicity Co-Chair, 36th IEEE International Conference on Data Engineering (ICDE 2020)</li>
+<li>Poster Co-Chair, 27th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL 2019)</li>
+<li>PC Co-Chair, 19th IEEE International Conference on Mobile Data Management (MDM 2018)</li>
+<li>Publicity Co-Chair, 22nd International Conference on Database Systems for Advanced Applications (DASFAA 2017)</li>
+<li>Publicity Chair, 26th International Conference on Scientific and Statistical Database Management (SSDBM 2014)</li>
+</ul>
+<h2 id="Member-of-Program-Committees-for-Conferences-and-Workshops"><a href="#Member-of-Program-Committees-for-Conferences-and-Workshops" class="headerlink" title="Member of Program Committees for Conferences and Workshops"></a>Member of Program Committees for Conferences and Workshops</h2><ul>
+<li>International Conference on Very Large Data Bases (VLDB 2021)</li>
+<li>The AAAI Conference on Artificial Intelligence (AAAI 2020)</li>
+<li>IEEE International Conference on Data Engineering (ICDE 2020, ICDE 2019, ICDE 2018, ICDE 2015, ICDE 2013, ICDE 2012)</li>
+<li>International Joint Conference on Artificial Intelligence (IJCAI-PRICAI 2020, IJCAI 2019)</li>
+<li>ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (SIGSPATIAL 2019)</li>
+<li>ACM International Conference on Information and Knowledge Management (CIKM 2019)</li>
+<li>International Joint Conference on Artificial Intelligence and European Conference on Artificial Intelligence (IJCAI-ECAI 2018)</li>
+<li>International Conference on Database Systems for Advanced Applications (DASFAA 2015, DASFAA 2014)</li>
+<li>IEEE International Conference on Mobile Data Management (MDM 2019, MDM 2012)</li>
+<li>IEEE International Conference on Intelligent Transportation Systems (ITSC 2017)</li>
+<li>APWeb-WAIM Joint Conference on Web and Big Data (APWeb-WAIM 2017)</li>
+<li>Asia-Pacific Web Conference (APWeb 2016, APWeb 2015 (demo track), APWeb 2012)</li>
+<li>International Symposium on Temporal Representation and Reasoning (TIME 2018)</li>
+<li>International Workshop on Mobile Data Analytics (MoDA 2013, in conjunction with ICDE 2013)</li>
+<li>International Workshop on Data Management for Emerging Network Infrastructure (DaMEN 2013, in conjunction with APWeb 2013; DaMEN 2014, in - - - conjunction with DASFAA 2014)</li>
+<li>International Workshop on Complex Social Network Analysis (CSNA 2012, in conjunction with ASONAM 2012)</li>
+<li>International Workshop on Indoor Spatial Awareness (ISA 2011, in conjunction with SIGSPATIAL&#x2F;GIS 2011)</li>
+</ul>
+<h2 id="Reviewer-for-Journals"><a href="#Reviewer-for-Journals" class="headerlink" title="Reviewer for Journals"></a>Reviewer for Journals</h2><ul>
+<li>The VLDB Journal</li>
+<li>IEEE Transactions on Knowledge and Data Engineering (TKDE)</li>
+<li>ACM Transactions on Database Systems (TODS)</li>
+<li>ACM Transactions on Information Systems (TOIS)</li>
+<li>ACM Computing Surveys (CSUR)</li>
+<li>ACM Transactions on Spatial Algorithms and Systems (TSAS)</li>
+<li>ACM Transactions on Intelligent Systems and Technology (TIST)</li>
+<li>IEEE Transactions on Mobile Computing (TMC)</li>
+<li>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</li>
+<li>IEEE Transactions on Intelligent Transportation Systems</li>
+<li>IEEE Transactions on Vehicular Technology</li>
+<li>European Journal of Information Systems</li>
+<li>Transportation Research Part C: Emerging Technologies</li>
+<li>Transportation Research Part D: Transport and Environment</li>
+<li>International Journal of Geographical Information Science (IJGIS)</li>
+<li>Distributed and Parallel Databases</li>
+<li>Pervasive and Mobile Computing</li>
+<li>IEEE Transactions on Emerging Topics in Computational Intelligence</li>
+<li>Information Processing &amp; Management</li>
+<li>International Journal of Information Technology &amp; Decision Making</li>
+<li>World Wide Web: Internet and Web Information System World Wide Web</li>
+<li>IEEE Access</li>
+<li>Engineering Computations</li>
+<li>Journal of Computational Science</li>
+<li>Journal of Traffic and Transportation Engineering</li>
+<li>International Journal of Computational Science and Engineering</li>
+<li>Applied Mathematics and Computation</li>
+<li>Earth Science Informatics</li>
+<li>Frontiers of Computer Science</li>
+</ul>
+</font>
+</div><div class="post-footer"><div class="meta"><div class="info"><hr></div></div></div></div><div class="pagination"><ul class="clearfix"></ul></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script></body></html>
