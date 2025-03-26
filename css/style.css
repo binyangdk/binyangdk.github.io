@@ -124,6 +124,12 @@ a:hover, a:active {
   height: 60px;
   border-bottom: 1px solid #f2f2f2;
 }
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; 
+  margin-top: -60px;
+}
 .page-top .nav {
   list-style: none;
   padding: 18px 30px;
