@@ -134,7 +134,7 @@ a:hover, a:active {
   list-style: none;
   padding: 18px 30px;
   float: left;
-  font-size: 14px;
+  font-size: 16px;
 }
 .page-top .nav li {
   position: relative;
@@ -229,7 +229,7 @@ a:hover, a:active {
 }
 .sidebar .social-links li {
   padding: 0.5rem 2rem;
-  line-height: 0;
+  line-height: 1.5;
   margin: 0 auto;
   color: #fff;
 }
@@ -283,6 +283,14 @@ a:hover, a:active {
 }
 .post .post-content a:hover {
   color: #2F69B3;
+ 
+}
+.post .post-content ul{
+  font-size: 17px;
+}
+
+.post .post-content p{
+  font-size: 17px;
 }
 
 .post .post-content h1 {
@@ -292,25 +300,25 @@ a:hover, a:active {
 }
 .post .post-content h2 {
   color: #5F5F5F;
-  font-size: 19px;
+  font-size: 20px;
 }
 .post .post-content h3 {
   color: #5F5F5F;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
 }
 .post .post-content h4 {
   color: #5F5F5F;
-  font-size: 17px;
+  font-size: 18px;
 }
 .post .post-content h5 {
   color: #5F5F5F;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
 }
 .post .post-content h6 {
   color: #5F5F5F;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .post .post-footer {
