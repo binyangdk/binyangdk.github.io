@@ -230,7 +230,7 @@ a:hover, a:active {
 }
 .sidebar .social-links li {
   padding: 0.5rem 1.5rem;
-  line-height: 2;
+  line-height: 1.5;
   margin: 0 auto;
   color: #fff;
 }
