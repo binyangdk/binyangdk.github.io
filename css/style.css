@@ -745,3 +745,12 @@ a.btn {
 img[alt=CERTI] {
   width: 75%;
 }
+
+/* 为链接添加块级显示和间距 */
+.block-link {
+  display: block;
+  margin-top: 0em;
+  color: #4786D6; /* 链接颜色 */
+  text-decoration: none;
+}
+
