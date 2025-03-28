@@ -8,9 +8,10 @@ window.onload = function() {
 	}
 	//- 页面加载完成后，显示content
 	//- Display content after page loading is complete
+	
+	document.querySelector(`.content`).style.display = "block";
 	document.querySelector(`.page-top`).style.display = "block";
 	document.querySelector(`.sidebar`).style.display = "block";
-	document.querySelector(`.content`).style.display = "block";
 	//- - document.querySelector(`body`).style.display = "block";
 
 	//- 监听窗口大小变化，假设用户在桌面端上修改了窗口大小，需要重新设置content的margin-top
