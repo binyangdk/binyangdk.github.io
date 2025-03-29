@@ -143,15 +143,15 @@ a:hover, a:active {
   padding-right: 20px;
 }
 .page-top .nav a {
-  color: #5A5A5A;
+  color: #4b4b4b;
 }
 .page-top .nav a:hover {
   color: #4786D6;
 }
 .page-top .nav a.current {
-  color: #5A5A5A;
+  color: #4b4b4b;
   padding-bottom: 22px;
-  border-bottom: 1px solid #5A5A5A;
+  border-bottom: 1px solid #4b4b4b;
 }
 .page-top .information {
   float: right;
