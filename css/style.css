@@ -275,6 +275,10 @@ a:hover, a:active {
   letter-spacing: 1px;
   color:  #4b4b4b;
 }
+.script-container {
+  margin-top: 1rem;  /* 与上方内容间隔 */
+  display: block;    /* 确保块级特性 */
+}
 .post .post-title a:hover {
   text-decoration: underline;
 }
