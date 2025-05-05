@@ -145,6 +145,7 @@ a:hover, a:active {
 .page-top .nav a {
   color: #4b4b4b;
 }
+
 .page-top .nav a:hover {
   color: #4786D6;
 }
@@ -245,6 +246,7 @@ a:hover, a:active {
 .post {
   background-color: #FFF;
   margin: 30px;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 .post .post-title h1 {
   text-transform: uppercase;
